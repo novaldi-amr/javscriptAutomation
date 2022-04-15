@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648632332517' stop='1648632332748'>
+    <name>As a user i want</name>
+    <title>As a user i want</title>
+    <test-cases>
+        <test-case start='1648632332517' status='broken' stop='1648632332747'>
+            <name>Login</name>
+            <title>Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-99.0.4844.82'/>
+            </parameters>
+            <steps>
+                <step start='1648632332518' status='passed' stop='1648632332746'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1f171003-bff7-4a51-96ff-cd1127a5c2a1-attachment.png' type='image/png' size='5199'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.fullscrenWindow is not a function</message>
+                <stack-trace>TypeError: browser.fullscrenWindow is not a function
+                    at loginSauce.open (C:\Users\noval\website-saucelabs\test\pageobjects\pagesaucelabs.js:4:17)
+                    at Context.&lt;anonymous> (C:\Users\noval\website-saucelabs\test\specs\suacelabs.js:5:26)
+                    at Context.executeAsync (C:\Users\noval\website-saucelabs\node_modules\@wdio\utils\build\shim.js:331:27)
+                    at Context.testFrameworkFnWrapper (C:\Users\noval\website-saucelabs\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
