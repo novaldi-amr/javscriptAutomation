@@ -19,7 +19,7 @@ class loginSauce extends PageSaucelabs {
         await this.passwordInput.setValue(password);
         await this.btnLogin.click();
     }
- //test
+
 }
 
 module.exports = new loginSauce();
