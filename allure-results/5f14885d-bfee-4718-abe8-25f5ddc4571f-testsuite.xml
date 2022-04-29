@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1650012635458' stop='1650012645053'>
+    <name>As a user i want</name>
+    <title>As a user i want</title>
+    <test-cases>
+        <test-case start='1650012635458' status='broken' stop='1650012645052'>
+            <name>Login</name>
+            <title>Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+            </parameters>
+            <steps>
+                <step start='1650012635460' status='passed' stop='1650012645051'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a0384c0f-3800-43e0-a834-8a5b00a928b2-attachment.json' type='application/json' size='35'/>
+                        <attachment title='Screenshot' source='b397641f-459b-4332-a999-6c81a04813d7-attachment.png' type='image/png' size='550641'/>
+                    </attachments>
+                    <steps>
+                        <step start='1650012635463' status='passed' stop='1650012644354'>
+                            <name>POST /session/:sessionId/window/fullscreen</name>
+                            <title>POST /session/:sessionId/window/fullscreen</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1650012644354' status='passed' stop='1650012644866'>
+                            <name>POST /session/:sessionId/window/maximize</name>
+                            <title>POST /session/:sessionId/window/maximize</title>
+                            <attachments>
+                                <attachment title='Response' source='1fae65bd-e3c2-40d1-b559-a0842b8605f7-attachment.json' type='application/json' size='59'/>
+                            </attachments>
+                            <steps>
+                                <step start='1650012644356' status='passed' stop='1650012644438'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments>
+                                        <attachment title='Response' source='87792b9a-3c94-4bd2-83b1-ef3ef817aed7-attachment.json' type='application/json' size='57'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>loginText is not defined</message>
+                <stack-trace>ReferenceError: loginText is not defined
+                    at Context.&lt;anonymous> (C:\Users\noval\website-saucelabs\test\specs\suacelabs.js:13:9)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -2,24 +2,31 @@ const PageSaucelabs = require('./pagesaucelabs')
 
 class loginSauce extends PageSaucelabs {
 
-    get usernameInput() {
-        return $('#user-name');
+    get buttonSubmitLogin(){
+        return $('button[type="submit"]');
     }
 
-    get passwordInput() {
-        return $('#password');
+    get loginText () {
+        return $('div[class="profile"]')
     }
 
-    get btnLogin() {
-        return $('#login-button');
+    get modalTextLogin(){
+        return $('div[class="modal-content"]');
     }
 
-    async login(username, password){
-        await this.usernameInput.setValue(username);
-        await this.passwordInput.setValue(password);
-        await this.btnLogin.click();
+    get nomorHandphoneField(){
+        return $('input[data-testid="phone"]');
     }
 
+    get ubahNomorHandphone(){
+        return $('button[class="btn-ubah w-100 mt-32 btn btn-primary"]');
+    }
+
+    async login(username){
+        await this.nomorHandphoneField.setValue(username);
+        await this.buttonSubmitLogin.click();
+    }
+ 
 }
 
 module.exports = new loginSauce();

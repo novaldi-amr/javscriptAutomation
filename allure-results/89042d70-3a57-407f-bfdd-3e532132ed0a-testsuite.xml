@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1650012183068' stop='1650012192286'>
+    <name>As a user i want</name>
+    <title>As a user i want</title>
+    <test-cases>
+        <test-case start='1650012183068' status='broken' stop='1650012192286'>
+            <name>Login</name>
+            <title>Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+            </parameters>
+            <steps>
+                <step start='1650012183070' status='passed' stop='1650012192285'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='88ec190a-ee24-486f-a766-56bc91470ec3-attachment.json' type='application/json' size='35'/>
+                        <attachment title='Screenshot' source='0d3b8921-b764-40d0-9b8c-b967cea5f78d-attachment.png' type='image/png' size='606029'/>
+                    </attachments>
+                    <steps>
+                        <step start='1650012183102' status='passed' stop='1650012191482'>
+                            <name>POST /session/:sessionId/window/fullscreen</name>
+                            <title>POST /session/:sessionId/window/fullscreen</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1650012191482' status='passed' stop='1650012192057'>
+                            <name>POST /session/:sessionId/window/maximize</name>
+                            <title>POST /session/:sessionId/window/maximize</title>
+                            <attachments>
+                                <attachment title='Response' source='121bd8f0-023f-4637-8c62-059e629bff3d-attachment.json' type='application/json' size='59'/>
+                            </attachments>
+                            <steps>
+                                <step start='1650012191484' status='passed' stop='1650012191568'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments>
+                                        <attachment title='Response' source='253ab3bb-4e44-4159-9c70-8d642b6668aa-attachment.json' type='application/json' size='57'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'waitForDisplayed')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'waitForDisplayed')
+                    at Context.&lt;anonymous> (C:\Users\noval\website-saucelabs\test\specs\suacelabs.js:13:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
